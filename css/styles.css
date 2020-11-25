@@ -1,0 +1,173 @@
+/*-----------
+   IMPORT
+------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+
+/*-----------
+   BASE
+------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+/*-----------
+   HEADER
+------------*/
+
+.section-1{
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+}
+
+
+.h-nav-link-1, .h-nav-link-2,.h-nav-link-3 {
+    display: inline-block;
+    margin-right: 40px;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 16px;
+    transition-duration: 0.1s;
+    color: inherit;
+    padding: 40px 0px;
+    height: 100%;
+}
+
+.h-nav-link-1, .h-nav-link-2,.h-nav-link-3[data-active=true] {
+    color: #0065FC;
+}
+
+.h-nav-link-1, .h-nav-link-2,.h-nav-link-3:hover {
+    color: #0065FC;
+}
+
+.h-nav-link-2{
+    color: #1F1F1F;
+}
+
+.h-nav-link-2:hover{
+    color: #0065FC;
+}
+
+.h-sinscrire{
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.h-hebergement{
+    border-top: 4px solid #0065FC;
+}
+
+.h-nav-link-1{
+    padding-top: 35px;
+}
+
+
+/*-----------
+    MAIN
+------------*/
+
+.main {
+    margin: auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.search-title {
+    color: #1F1F1F;
+    margin-bottom: 0.5rem;
+    font-size: 22px;
+}
+
+.search-subtitle {
+    color: #1F1F1F;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+
+.form{
+    margin-top: 20px;
+    width: 420px;
+    height: 51px;
+    border-radius: 15px;
+    background: #fff;
+    border: 2px solid #f2f2f2;
+}
+
+.form-icon{
+    width: 52px;
+    height: 49px;
+    border-radius: 14px 0px 0px 14px;
+    background: #f2f2f2;
+}
+
+.fa-map-marker-alt{
+    padding: 15px 5px 10px 20px;
+}
+
+.rechercher{
+    width: 134px;
+    height: 51px;
+    border-radius: 0px 15px 15px 0px;
+    background: #0065fc;
+    position: absolute;
+    bottom: 517px;
+    left: 390px;
+}
+
+.rechercher-text{
+    padding: 15px 10px 15px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.form-search-input{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 0;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 532px;
+    left: 160px;
+    position: absolute;
+}
+
+.form-search-input:focus{
+    outline: none;
+}
+
+.form-search-input::placeholder {
+    font-size: 1rem;
+    color: #1F1F1F;
+}
