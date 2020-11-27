@@ -1,75 +1,355 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P2 - Reservia - Nathan Levy</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/8a1df69c19.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8a1df69c19.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- header -->
-    <section class="section-1">
-        <header class="header">
-            <a href="#" class="logo"><img src="../assets/logo/Reservia.svg" alt="Reservia"></a>
-            <!-- nav -->
-            <ul class="navigation">
-                <li class="h-hebergement"><a class="h-nav-link-1" href="#" data-active="true">Hébergement</a></li>
-                <li class="h-activites"><a class="h-nav-link-2" href="#" data-active="false">Activités</a></li>
-                <li class="h-sinscrire"><a class="h-nav-link-3" href="#" data-active="false">S'inscrire</a></li>
-            </ul>
-            <!-- /nav -->
-        </header>
+    <section class="header-position">
+      <header class="header">
+        <a href="#" class="logo"
+          ><img src="assets/logo/Reservia.svg" alt="Reservia" style="margin-top: 30px;"></a>
+        <!-- nav -->
+        <div class="navigation">
+
+        <ul class="navigation">
+          <li class="h-hebergement">
+            <a class="h-nav-link-1" href="#" data-active="true">Hébergement</a>
+          </li>
+          <li class="h-activites">
+            <a class="h-nav-link-2" href="#" data-active="false">Activités</a>
+          </li>
+        </ul>
+        <a class="h-nav-link-3 h-sinscrire" href="#">S'inscrire</a>
+        </div>
+
+        <!-- /nav -->
+      </header>
     </section>
     <!-- /header -->
+
     <!-- main -->
     <main class="main">
-        <!-- search -->
-        <section class="search">
-            <div class="search-content">
-                <h1 class="search-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="search-subtitle">En plein centre de ville ou en pleine nature</p>
+      <!-- search -->
+      <section class="search">
+        <div class="search-content">
+          <h1 class="search-title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="search-subtitle">
+            En plein centre de ville ou en pleine nature
+          </p>
+        </div>
+        <form class="form" action="form.html" method="get">
+          <div class="form-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input
+            class="form-search-input"
+            type="search"
+            placeholder="Marseille, France"
+            size="1"
+          />
+          <div class="rechercher">
+            <a class="form-link" href="form.html" target="_blank"
+              ><div class="rechercher-text">Rechercher</div></a
+            >
+          </div>
+        </form>
+        <!-- /search -->
+        <!-- filter -->
+        <div class="filter">
+          <h3 class="filter-title">Filtres</h3>
+          <div class="filtre-economy">
+            <div class="filter-round">
+              <i class="fas fa-money-bill-wave filtre-economy-icon"></i>
             </div>
-            <form class="form" action="form.html" method="get">
-                <div class="form-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <input class="form-search-input" type="search" placeholder="Marseille, France" size="1">
-                <div class="rechercher">
-                    <a class="form-link" href="form.html" target="_blank"><div class="rechercher-text">Rechercher</div></a>
-                </div>
-            </form>
-            <!-- filter -->
-            <div class="filter">
-                <h3 class="filter-title">Filtres</h3>
-                <div class="filtre-economy">
-                    <div class="filter-round">
-                        <i class="fas fa-money-bill-wave filtre-economy-icon"></i>
-                    </div>
-                    <span class="filtre-economy-title">Économique</span>
-                </div>
-                <div class="filtre-familial">
-                    <div class="filter-round">
-                        <i class="fas fa-child filtre-familial-icon"></i>
-                    </div>
-                    <span class="filtre-familial-title">Familial</span>
-                </div>
-                <div class="filtre-chic">
-                    <div class="filter-round">
-                        <i class="fas fa-heart filtre-chic-icon"></i>
-                    </div>
-                    <span class="filtre-chic-title">Romantique</span>
-                </div>
-                <div class="filtre-animals">
-                    <div class="filter-round">
-                        <i class="fas fa-dog filtre-animals-icon"></i>
-                    </div>
-                    <span class="filtre-animals-title">Animaux autorisés</span>
-                </div>
+            <span class="filtre-economy-title">Économique</span>
+          </div>
+          <div class="filtre-familial">
+            <div class="filter-round">
+              <i class="fas fa-child filtre-familial-icon"></i>
             </div>
-
-
-        </section>
+            <span class="filtre-familial-title">Familial</span>
+          </div>
+          <div class="filtre-chic">
+            <div class="filter-round">
+              <i class="fas fa-heart filtre-chic-icon"></i>
+            </div>
+            <span class="filtre-chic-title">Romantique</span>
+          </div>
+          <div class="filtre-animals">
+            <div class="filter-round">
+              <i class="fas fa-dog filtre-animals-icon"></i>
+            </div>
+            <span class="filtre-animals-title">Animaux autorisés</span>
+          </div>
+        </div>
+        <div class="information">
+          <div class="information-i">
+            <i class="fas fa-info inforamtion-i-icon"></i>
+          </div>
+          <p class="information-text">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
+      </section>
+      <!-- /filter -->
+      <!-- Hebergements -->
+      <section class="hebergement">
+        <div class="hebergement-main">
+          <header class="hebergement-main-h">
+            <h2 class="hebergement-main-h-title">Hébergement à Marseille</h2>
+          </header>
+          <div class="hebergement-main-card">
+            <a href="#">
+              <div class="hebergement-card">
+                <img
+                        class="hebergement-card-img"
+                        src="./assets/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="Chambre d'hôtel Auberge la Cannebière"
+                />
+                <figcaption class="hebergement-figcap">
+                  <h3 class="hebergement-card-title">Auberge la Cannebière</h3>
+                </figcaption>
+              </div>
+              <p class="hebergement-card-description">
+                Nuit à partir de
+                <strong class="hebergement-card-price">25€</strong>
+              </p>
+              <div class="hebergement-review">
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="false"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="hebergement-main-card">
+            <a href="#">
+              <div class="hebergement-card">
+                <img
+                        class="hebergement-card-img"
+                        src="./assets/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="Chambre d'Hôtel du port"
+                />
+                <figcaption class="hebergement-figcap">
+                  <h3 class="hebergement-card-title">Hôtel du port</h3>
+                </figcaption>
+              </div>
+              <p class="hebergement-card-description">
+                Nuit à partir de
+                <strong class="hebergement-card-price">52€</strong>
+              </p>
+              <div class="hebergement-review">
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="hebergement-main-card">
+            <a href="#">
+              <div class="hebergement-card">
+                <img
+                        class="hebergement-card-img"
+                        src="./assets/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="Chambre d'Hôtel Les mouettes"
+                />
+                <figcaption class="hebergement-figcap">
+                  <h3 class="hebergement-card-title">Hôtel Les mouettes</h3>
+                </figcaption>
+              </div>
+              <p class="hebergement-card-description">
+                Nuit à partir de
+                <strong class="hebergement-card-price">76€</strong>
+              </p>
+              <div class="hebergement-review">
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="false"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="hebergement-main-card">
+            <a href="#">
+              <div class="hebergement-card">
+                <img
+                        class="hebergement-card-img"
+                        src="./assets/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="Chambre d'Hôtel de la mer"
+                />
+                <figcaption class="hebergement-figcap">
+                  <h3 class="hebergement-card-title">Hôtel de la mer</h3>
+                </figcaption>
+              </div>
+              <p class="hebergement-card-description">
+                Nuit à partir de
+                <strong class="hebergement-card-price">46€</strong>
+              </p>
+              <div class="hebergement-review">
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="false"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="false"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="hebergement-main-card">
+            <a href="#">
+              <div class="hebergement-card">
+                <img
+                        class="hebergement-card-img"
+                        src="./assets/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="Chambre d'hôtel Auberge Le Panier"
+                />
+                <figcaption class="hebergement-figcap">
+                  <h3 class="hebergement-card-title">Auberge Le Panier</h3>
+                </figcaption>
+              </div>
+              <p class="hebergement-card-description">
+                Nuit à partir de
+                <strong class="hebergement-card-price">23€</strong>
+              </p>
+              <div class="hebergement-review">
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="false"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="hebergement-main-card">
+            <a href="#">
+              <div class="hebergement-card">
+                <img
+                        class="hebergement-card-img"
+                        src="./assets/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="Chambre d'hôtel chez Amina"
+                />
+                <figcaption class="hebergement-figcap">
+                  <h3 class="hebergement-card-title">Hôtel chez Amina</h3>
+                </figcaption>
+              </div>
+              <p class="hebergement-card-description">
+                Nuit à partir de
+                <strong class="hebergement-card-price">96€</strong>
+              </p>
+              <div class="hebergement-review">
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+                <i
+                        class="fas fa-star hebergement-review-icon"
+                        data-active="true"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
