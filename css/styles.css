@@ -81,12 +81,16 @@ strong{
 }
 
 .h-sinscrire{
-    font-weight: bold;
+    font-weight: 600;
     color: #0065FC;
 }
 
 .h-hebergement{
     border-top: 4px solid #0065FC;
+}
+
+.hebergement-main-h-title{
+    font-weight: 600;
 }
 
 .h-nav-link-1{
@@ -167,6 +171,7 @@ strong{
     color: #1F1F1F;
     margin-bottom: 0.5rem;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .search-subtitle {
@@ -262,6 +267,7 @@ strong{
     display: flex;
     align-items: center;
     margin: 0 30px 1rem 0;
+    font-weight: 700;
 }
 
 /*---FilterName---*/
@@ -436,6 +442,7 @@ strong{
 
 .information-text{
     font-size: 16px;
+    font-weight: 300;
 }
 
 /*---Hebergement---*/
@@ -468,8 +475,8 @@ strong{
 }
 
 .hebergement-card-title{
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 15px;
     letter-spacing: 0.04em;
     text-align: left;
     color: #1f1f1f;
@@ -478,7 +485,6 @@ strong{
 
 .hebergement-main-card{
     width: auto;
-    height: 100%;
     background-color: white;
     padding: 0.375rem;
     border-radius: 1.25rem;
@@ -486,6 +492,7 @@ strong{
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;;
+    transition-duration: 0.5s;
 }
 
 .hebergement-card-img{
@@ -505,7 +512,7 @@ strong{
 .hebergement-card-description {
     margin: 0.25rem 0.75rem 0.25rem 0.75rem;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     color: #1f1f1f;
 }
@@ -520,12 +527,19 @@ strong{
     color: #d9d9d9;
 }
 
+.hebergement-main-card:hover {
+    transform: scale(0.92);
+    color: #0065fc;
+    cursor: pointer;
+}
+
+
 .hebergement-texte {
     font-size: 17px;
     letter-spacing: 0.01em;
     text-align: left;
     color: #1f1f1f;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .ppl{
@@ -538,12 +552,14 @@ grid-template-rows: auto repeat(3, 1fr);
 .ppl-title{
 margin: 0;
 display: flex;
+font-weight: 600;
 justify-content: space-between;
 }
 
 .ppl-card{
-
+    height: 145px;
 }
+
 
 .ppl-wrap-content{
     display: flex;
@@ -569,11 +585,11 @@ justify-content: space-between;
 }
 
 
-.hostingPopularWrapcontentContent {
+.ppl-wrap-content-content{
     display: flex;
     flex-direction: column;
 }
-.hostingPopularWrapcontentContentWhitespace {
+.ppl-wrap-content-content-space{
     flex: 1;
 }
 .hostingPopularhostingMainCard {
@@ -613,15 +629,11 @@ justify-content: space-between;
     }
     .hebergement-main-card{
         width: auto;
-        height: 253px;
     }
     .hebergement-card-img{
         height: 155px;
     }
     .hebergement-card-title{
-        font-size: 20px;
-    }
-    .hebergement-card-description{
         font-size: 18px;
     }
 }
