@@ -17,6 +17,7 @@
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 li{
     list-style: none;
@@ -641,5 +642,124 @@ justify-content: space-between;
     .ppl {
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 9rem);
+        border-radius: 0;
+        margin: 15px -40px;
+    }
+    .hebergement-main{
+        background-color: #fff;
+        margin: 0 -40px;
+    }
+    main{
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ppl{
+        margin: 15px -30px;
+    }
+    .hebergement-main{
+        margin: 15px -30px;
+    }
+}
+
+
+.activites{
+    display: grid;
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+.activites-title{
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+}
+
+.activites-card{
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
+}
+
+.activites-card-wrap{
+    position: relative;
+    flex: 1;
+}
+
+.activites-card-wrap-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites-card-title{
+    margin: 1.2rem 1.5rem;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.activites-card-1{
+    width: auto;
+    height: 446px;
+}
+
+.activites-card-2{
+    width: auto;
+    height: 235px;
+}
+
+.activites-card-3{
+    width: auto;
+    height: 446px;
+}
+
+.activites-card-4{
+    width: auto;
+    height: 195px;
+}
+
+.activites-card-5{
+    width: auto;
+    height: 167px;
+}
+
+.activites-card-6{
+    width: auto;
+    height: 211px;
+}
+
+@media (min-width: 1100px) {
+    .activites {
+        /*grid-template-columns: repeat(4, 1fr); */
+    }
+    .activites-card-1 {
+        grid-row: 2/7;
+        grid-column: 1/2;
+    }
+    .activites-card-2 {
+        grid-column: 2/3;
+        grid-row: 2/5;
+    }
+    .activites-card-3 {
+        grid-column: 3/4;
+        grid-row: 2/7;
+    }
+    .activites-card-4 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .activites-card-5 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    .activites-card-6 {
+        grid-column: 4/5;
+        grid-row: 4/7;
+        margin-top: 20px;
     }
 }
