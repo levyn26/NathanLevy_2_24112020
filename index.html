@@ -12,28 +12,17 @@
   </head>
   <body>
     <!-- header -->
-    <section class="header-position">
       <header class="header">
         <a href="#" class="logo"
         ><img src="assets/logo/Reservia.svg" alt="Reservia"></a>
         <!-- nav -->
-        <div class="navigation">
-
-          <ul class="navigation">
-            <li class="h-hebergement">
-              <a class="h-nav-link-1" href="#" data-active="true">Hébergements</a>
-            </li>
-            <li class="h-activites">
-              <a class="h-nav-link-2" href="#" data-active="false">Activités</a>
-            </li>
-          </ul>
-          <a class="h-nav-link-3 h-sinscrire" href="#">S'inscrire</a>
-        </div>
-
-
+        <nav class="h-navigation">
+              <a class="h-nav-link" href="#hebergements" data-active="false">Hébergements</a>
+              <a class="h-nav-link" href="#activites" data-active="false">Activités</a>
+        </nav>
         <!-- /nav -->
+        <a class="h-sinscrire" href="#">S'inscrire</a>
       </header>
-    </section>
     <!-- /header -->
 
 
@@ -108,7 +97,7 @@
       </section>
       <!-- /filter -->
       <!-- Hebergements -->
-      <section class="hebergement">
+      <section class="hebergement" id="hebergements">
         <div class="hebergement-main">
           <header class="hebergement-main-h">
             <h2 class="hebergement-main-h-title">Hébergements à Marseille</h2>
@@ -430,7 +419,8 @@
           </div>
         </aside>
       </section>
-      <section class="activites">
+      <!-- Activités -->
+      <section class="activites" id="activites">
         <h2 class="activites-title">Activités à Marseille</h2>
         <a href="#" class="activites-card activites-card-1">
           <div class="activites-card-wrap">
