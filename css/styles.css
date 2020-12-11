@@ -89,6 +89,9 @@ strong{
     font-weight: 600;
 }
 
+.search-title{
+    margin-top: 30px;
+}
 
 @media screen and (min-width: 601px) {
     .header {
@@ -196,13 +199,14 @@ strong{
     box-sizing: border-box;
 }
 
-.search-title {
+h1 {
     color: #1F1F1F;
     margin-bottom: 0.5rem;
     font-size: 22px;
     font-weight: 700;
     margin-top: 40px;
 }
+
 
 .search-subtitle {
     color: #1F1F1F;
